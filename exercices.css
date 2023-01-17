@@ -1,0 +1,155 @@
+#exercices_page h2 {
+	font-size: 3rem;
+	font-family: 'Fredoka One', cursive;
+	margin-left: 150px;
+}
+
+
+/* INDEX ========================================== */
+#exercice_index_container {
+	position: fixed;
+	top: 260px ;right: 75px;
+
+	background-color: #000000c9;
+	color: white;
+	border-radius: 10px;
+	padding: 2px 10px;
+}
+
+#exercice_index_head {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.4em;
+	font-weight: 600;
+	padding-top: 4px;
+}
+
+#exercice_index_label {
+	position: relative;
+	top: -3px;
+	display: block;
+	height: 1.4em; width: 1.3em;
+
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+#exercice_index_btn {
+	opacity: 0;
+	width: 0;
+}
+
+#exercice_index_span {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#exercice_index_span i {
+	font-size: 1.4em;
+}
+
+#exercice_index_btn:checked + #exercice_index_span {
+	animation: 0.7s ease-in-out forwards rotateIndex;
+}
+
+@keyframes rotateIndex {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+
+#exercice_index {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+
+	width: 20vw;
+}
+
+#exercice_index ul {
+	padding-left: 1.3vw;
+	margin-top: 0;
+}
+
+#exercice_index ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#exercice_index ul a:visited {
+	color: #fff;
+}
+
+#exercice_index ul a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* Global styles for the exercices */
+
+.exercice_container {
+	margin: 0 50px 20px 50px;
+}
+
+
+.exercice_container h3 {
+	border-bottom: thick double black;
+	font-size: 2em;
+}
+
+.exercice_container h4 {
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+
+/* Réponse PHP */
+#exercice_php {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+/* Algo color scheme */
+.algo_title {
+	color: darkblue;
+}
+
+
+/* C color scheme ================================== */
+
+.c_var_declaration {
+	color: blue;
+}
+
+.func_call {
+	color: red;
+}
+
+.c_int {
+	color: orange;
+}
+
+.c_characters {
+	color: green;
+}
+
+.c_symbols {
+	color: brown;
+}
+
+/* PHP color scheme ==================================== */
+
+.html_tag {
+	color: red;
+}
